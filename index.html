@@ -5,75 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nasa- Photo of the day</title>
+    <title>Persistent Preferences</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/ce67f94fc0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/nasa-logo.png" alt="NASA logo">
-        </div>
-        
-        <!-- Navigation bar -->
 
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">My Gallery</a></li>
-                <li><a hrefx="#">Archive</a></li>
-                <li><a href="#">Submissions</a></li>
-            </ul>
-            <div class="search">
-                <input type="text" placeholder="Search">
-                <button><i class="fa fa-search"></i></button>
-            </div>
-        </nav>
+    <h1>NASA - PICTURE OF THE DAY</h1>
 
-        <!-- Background -->
-    <div>
-        <img class="container-fluid container-bg w100 p-0" src="images/background-home.png" alt="Picture of the side of an orange planet fading into black">
+    <input type="date" value="" />
+    <button type="button" class="generate-image">Generate Image </button>
+
+    <div class="content container-fluid">
+
+        <img id="image" src="" style="width: 70%" class="row col-lg-6 d-flex flex-row">
+        <p id="explanation" class="col-lg-6 d-flex flex-row"></p>
+
+        <button type="button-1" class="add clas col-lg-3">Add to favorites</button>
     </div>
-    </header>
 
-    <!-- Main content -->
+    <script src="main.js"></script>
+</body>
 
-    <div class="content">
-
-        <div class="information">
-
-            <h1>Photo of the day</h1>
-            <p>Welcome to NASA's Photo of the Day website, where we showcase the stunning images captured by our
-                spacecraft,
-                telescopes, and observatories. Each day, we select a new photograph that highlights the beauty, wonder,
-                and
-                complexity of our universe.
-
-                Our collection includes images of distant galaxies, swirling nebulas, erupting volcanoes, and much more.
-                Whether you're an astronomy enthusiast, a science student, or simply someone who appreciates the beauty
-                of
-                our cosmos, our Photo of the Day website is the perfect place to explore and discover new wonders.
-
-                Join us on this incredible journey of exploration and discovery, as we continue to push the boundaries
-                of
-                science and technology to better understand the mysteries of our universe.</p>
-                <button class="generate-image">Generate Image</button>
-        </div>
-
-
-        <!-- Social media sidebar -->
-
-        <div class="sidebar">
-            <ul>
-                <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-        </div>
-
-    </div>
-    </body>
-
-    </html>
+</html>
