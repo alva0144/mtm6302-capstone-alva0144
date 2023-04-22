@@ -14,6 +14,8 @@ CHALLENGES:
 
 -When I was testing the images, I realized that some of them wouldn't load because there was video data as well, so I had to create a conditional for the video using an if statement and creating an iframe for it to play in the console whenever the API result was a video.
 
+-I tried to create the local storage but it wasn't working, so I had to remove it.
+
 Tutorial References:
 https://www.youtube.com/watch?v=b5rjEW-_6po
 https://www.youtube.com/watch?v=FBTlPriUyWY&t=566s
